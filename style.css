@@ -10,15 +10,78 @@ ul,li{
 }
 
 :root{
-  --Soft-blue: #8bacda;
-  --Cyan: #00fff7;
 
-/*Neutral*/
+  /*Theme 1*/
 
---Very-dark-blue-mainBG: #0d192b;
---Very-dark-blue-cardBG: #14253d;
---Very-dark-blue-line: #2e415c;
---White: #ffffff;
+  /*Backgrounds*/
+  
+  --Very-dark-desaturated-blue-mainBackground: hsl(222, 26%, 31%);
+  --Very-dark-desaturated-blue-toggleBackground-keypadbackground: hsl(223, 31%, 20%);
+  --Very-dark-desaturated-blue-screenBackground : hsl(224, 36%, 15%);
+  
+  /*Keys*/
+  
+  --Desaturated-dark-blue-keyBackground: hsl(225, 21%, 49%);
+  --Desaturated-dark-blue-keyShadow: hsl(224, 28%, 35%);
+  
+  --Red-keyBackground-toggle: hsl(6, 63%, 50%);
+  --Dark-red-keyShadow: hsl(6, 70%, 34%);
+  
+  --Light-grayish-orange-keyBackground: hsl(30, 25%, 89%);
+  --Grayish-orange-keyShadow: hsl(28, 16%, 65%);
+  
+  /*Text*/
+  
+  --Very-dark-grayish-blue: hsl(221, 14%, 31%);
+  --White: hsl(0, 0%, 100%);
+  
+  /*Theme 2*/
+  
+  /*Backgrounds*/
+  
+  --Light-gray-mainBackground: hsl(0, 0%, 90%);
+  --Grayish-red-toggleBackground-keypadBackground: hsl(0, 5%, 81%);
+  --Very-light-gray-screenBackground: hsl(0, 0%, 93%);
+  
+  /*Keys*/
+  
+  --Dark-moderate-cyan-keybackground: hsl(185, 42%, 37%);
+  --Very-dark-cyan-keyShadow: hsl(185, 58%, 25%);
+  
+  --Orange-keyBackground-toggle: hsl(25, 98%, 40%);
+  --Dark-orange-keyShadow: hsl(25, 99%, 27%);
+  
+  --Light-grayish-yellow-keyBackground: hsl(45, 7%, 89%);
+  --Dark-grayish-orange-keyShadow: hsl(35, 11%, 61%);
+  
+  /*Text*/
+  
+  --Very-dark-grayish-yellow: hsl(60, 10%, 19%);
+  --White-text: hsl(0, 0%, 100%);
+  
+  /*Theme 3*/
+  
+  /*Backgrounds*/
+  
+  --Very-dark-violet-mainBackground: hsl(268, 75%, 9%);
+  --Very-dark-violet-toggleBackground-keypadBackground-screenBackground: hsl(268, 71%, 12%);
+  
+  /*Keys*/
+  
+  --Dark-violet-keyBackground: hsl(281, 89%, 26%);
+  --Vivid-magenta-keyShadow: hsl(285, 91%, 52%);
+  
+  --Pure-cyan-keyBackground-toggle: hsl(176, 100%, 44%);
+  --Soft-cyan-keyShadow: hsl(177, 92%, 70%);
+  
+  --Very-dark-violet-keyBackground: hsl(268, 47%, 21%);
+  --Dark-magenta-keyShadow: hsl(290, 70%, 36%);
+  
+  /*Text*/
+  
+  --Light-yellow: hsl(52, 100%, 62%);
+  --Very-dark-blue: hsl(198, 20%, 13%);
+  --White-text: hsl(0, 0%, 100%);
 
 /*footer*/
 
@@ -31,21 +94,18 @@ body{
 }
 
 .container{
-  background-color: var(--Very-dark-blue-mainBG);
+  background-color: var(--Very-dark-blue);
   height: 100vh;
   width: 100vw;
-  display: flex;
+ display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.card{
-  background-color: var(--Very-dark-blue-cardBG);
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+.row-cover{
+  background-color: var(--Dark-violet-keyBackground);
+  display: grid;
+  grid-template-columns: 1fr;
   width: 16rem;
   height: 28rem;
   padding: 1rem;
@@ -54,4 +114,4 @@ body{
 }
 
 .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: hsl(228, 45%, 44%); }
