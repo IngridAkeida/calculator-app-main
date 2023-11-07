@@ -1,6 +1,5 @@
 function calc(type, specificValue) {
 
-
   if(type === 'action'){
 
     if(specificValue === 'DEL' || specificValue === 'RESET'){
@@ -14,12 +13,13 @@ function calc(type, specificValue) {
         specificValue ==='.') {
         
           document.getElementById('result').value += specificValue;
+
     }
 
     if (specificValue === '=') {
       let field = eval(document.getElementById('result').value);
 
-      document.getElementById('result').value = field;
+      document.getElementById('result').value = field.toLocaleString();
     }
   } else if (type === 'value') {
     document.getElementById('result').value += specificValue;
