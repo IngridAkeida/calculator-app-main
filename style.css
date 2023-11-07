@@ -97,7 +97,7 @@ body{
   background-color: var(--Very-dark-blue);
   height: 100vh;
   width: 100vw;
- display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -106,10 +106,10 @@ body{
   background-color: var(--Dark-violet-keyBackground);
   display: grid;
   grid-template-columns: 1fr;
-  width: 16rem;
-  height: 28rem;
-  padding: 1rem;
-  border-radius: 1rem;
+  width: 23rem;
+  height: 42rem;
+  padding: 1.5rem;
+  border-radius: 0.1rem;
   gap: 1rem;
 }
 
